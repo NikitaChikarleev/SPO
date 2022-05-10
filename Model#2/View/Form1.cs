@@ -148,6 +148,7 @@ namespace View
             panel1.Location = new Point(400, 12);
         }
 
+        //добавление элемента
         private void button2_OK_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length > 0)
@@ -267,6 +268,7 @@ namespace View
             panel1.Location = new Point(400, 12);
         }
         
+        //удаление элемента
         private void button4_OK_Click(object sender, EventArgs e)
         {
             if (dataGridView2.RowCount > 0)
@@ -301,6 +303,7 @@ namespace View
             panel1.Location = new Point(400, 12);
         }
 
+        //поиск
         private void button1_Click(object sender, EventArgs e)
         {
             panel5.Visible = false;
@@ -357,6 +360,7 @@ namespace View
             panel1.Location = new Point(400, 12);
         }
         
+        //случайное добавление элемента
         private void button2_Click(object sender, EventArgs e)
         {
             random();
@@ -463,6 +467,7 @@ namespace View
             }
         }
 
+        //сохранение в файл csv
         private void button5_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
@@ -485,6 +490,7 @@ namespace View
             MessageBox.Show("Файл успешно сохранен");
         }
 
+        //чтение файла
         private void button6_Click(object sender, EventArgs e)
         {
             StreamReader rd = new StreamReader(@"C:\Users\Nikita\source\repos\Model#2\View\bin\Debug\model.csv", Encoding.GetEncoding(1251));
